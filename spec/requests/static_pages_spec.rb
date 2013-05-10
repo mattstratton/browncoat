@@ -6,17 +6,22 @@ describe "Static pages" do
 
   describe "Home page" do
 
-    it "should have the h1 'Browncoat'" do
-      visit '/static_pages/home'
-      page.should have_selector('h1', :text => 'Browncoat')
-    end
-    
-    it "should have the title 'Home'" do
-          visit '/static_pages/home'
-          page.should have_selector('title', :text => "#{base_title} | Home")
+      it "should have the h1 'Browncoat'" do
+        visit '/static_pages/home'
+        page.should have_selector('h1', :text => 'Browncoat')
       end
-    
-  end
+
+      it "should have the base title" do
+        visit '/static_pages/home'
+        page.source.should have_selector('title',
+                          :text => "Keep Shiny with Browncoat")
+      end
+
+      it "should not have a custom page title" do
+        visit '/static_pages/home'
+        page.should_not have_selector('title', :text => '| Home')
+      end
+    end
   describe "Help page" do
 
      it "should have the h1 'Help'" do
