@@ -5,7 +5,7 @@
 #
 # Generated June 05, 2013
 #
-# This configuration file is custom generated for Apartments.com_1
+# This configuration file is custom generated for Keep Shiny
 
 
 # Here are the settings that are common to all environments
@@ -15,7 +15,7 @@ common: &default_settings
   # You must specify the license key associated with your New Relic
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
-  license_key: 'a8001f89212660989df282bb6432bac8721e008d'
+  license_key: '25e4b7d4a56b77727ea6cbe995f1ebc79eae2800'
 
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
@@ -42,7 +42,7 @@ common: &default_settings
   #       - Ajax Service
   #       - All Services
   #
-  app_name: My Application
+  app_name: Browncoat
 
   # When "true", the agent collects performance data about your
   # application and reports this data to the New Relic service at
